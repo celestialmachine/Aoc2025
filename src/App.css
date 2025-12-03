@@ -1,0 +1,59 @@
+.App {
+  width: 100%;
+}
+
+.subtitle {
+  color: #888;
+  font-size: 1.2em;
+  margin-top: -1em;
+}
+
+.content {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.info, .days, .solution {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.info h2, .days h2, .solution h2 {
+  margin-top: 0;
+  color: #646cff;
+}
+
+.day-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.day-button {
+  padding: 1rem;
+  font-size: 0.9em;
+}
+
+.day-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  border-color: transparent;
+}
+
+.day-button.selected {
+  border-color: #646cff;
+  background-color: #333;
+}
+
+@media (prefers-color-scheme: light) {
+  .info, .days, .solution {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  .day-button.selected {
+    background-color: #e8e8e8;
+  }
+}
